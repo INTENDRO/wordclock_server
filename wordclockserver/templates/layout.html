@@ -18,7 +18,16 @@
 </head>
 <body>
 
-	<h1>Title</h1>
+	<nav class="navbar navbar-dark bg-dark">
+		<span class="navbar-brand mb-0 h1">Wordclock</span>
+	</nav>
+
+	<form method="POST" action="">
+		{{ form.hidden_tag() }}
+		{{ form.red_btn(class="btn btn-secondary m-4") }}
+		{{ form.green_btn(class="btn btn-secondary m-4") }}
+		{{ form.blue_btn(class="btn btn-secondary m-4") }}
+	</form>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
